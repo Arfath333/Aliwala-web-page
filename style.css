@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 html {
-    font-family: "Noto Sans Gothic", sans-serif;
+    font-family: "AR One Sans", sans-serif;
 }
 
 nav {
@@ -16,43 +18,50 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    margin-bottom:15px;
-    margin-left: 10px;
     background-color: rgb(250, 252, 252);
 }
+
+nav .desktop {
+    display: none;
+}
+
 .head {
     background-image:
-                linear-gradient(180deg,
-                    rgba(0, 0, 0, 0.75),
-                    transparent), 
-                      url("images/Screenshot\ 2024-06-01\ at\ 12.45.png");
+        linear-gradient(180deg,
+            rgba(0, 0, 0, 0.63),
+            transparent),
+        url("images/Screenshot\ 2024-06-01\ at\ 12.45.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.head h1 {
     text-align: center;
     color: white;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+    padding: 40px 10px 25px 10px;
+    font-size: 2rem;
+    font-weight: 500;
 }
-.head img{
-    padding-top: 30px;
+
+.head a {
+    display: flex;
+    justify-content: center;
 }
-.content img{
-    width: 8%;
-    height: 8%;
-    margin: 15px;
+
+img[alt~="download-app"] {
+    width: 150px;
+    padding: 10px;
 }
-.content h1{
-    color: rgb(1, 55, 106);
-    font-size: 1rem;
-    text-align: center;
+
+.head img {
+    padding: 8px;
 }
-.content p, .content-5 p{
-    color: #666666;
-    padding-top: 5px;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -60,15 +69,43 @@ nav {
     align-items: center;
     padding: 30px 0;
 }
-.content-2 #img1, #img2, #img3, #img4 {
+
+.content img {
+    width: 12%;
+    height: 8%;
+    margin: 15px;
+}
+
+.content h1 {
+    color: rgb(20, 75, 126);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.content p,
+.content-5 p {
+    color: #666666;
+    padding-top: 5px;
+    font-size: 0.83rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.content-2 #img1,
+#img2,
+#img3,
+#img4 {
     background-image: url("images/Rectangle 12773.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 11rem 2rem 2rem 2rem;
-    font-size: 1.3rem;
-    margin: 20px;
+    padding: 12rem 1rem 2rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-inline: 15px;
+    margin-top: 25px;
     color: white;
 }
+
 .content-2 button {
     color: white;
     border: 1px solid white;
@@ -76,126 +113,152 @@ nav {
     padding: 5px 13px;
     border-radius: 12px;
     background-color: transparent;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
+
 .content-2 #img2 {
     background-image: url("images/Rectangle\ 12774.png");
 }
+
 .content-2 #img3 {
     background-image: url("images/Frame 278.png");
 }
+
 .content-2 #img4 {
     background-image: url("images/Rectangle 12776.png");
 }
-.content-3 h1, .content-5 h1{
+
+.content-3 h1 {
     text-align: center;
     color: rgb(1, 55, 106);
     font-size: 1.5rem;
-    padding: 15px 0;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-bottom: 20px;
     margin-inline: 20px;
 }
-.content-3 #img-5{
+
+.content-3 #img-5 {
     display: flex;
     padding-inline: 20px;
     gap: 15px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 900;
 }
+
 .content-3 p {
     padding: 10px 0;
 }
-img[alt~="img5"]{
-    width: 95%;
-    height: 82%;
+
+img[alt~="img5"] {
+    width: 91%;
+    height: 75%;
+}
+.content-3 #img-6{
+    display: none;
 }
 .content-3 a {
     color: rgb(71, 71, 71);
     text-decoration: none;
     padding-bottom: 10px;
 }
+
 .content-4 {
     padding-top: 20px;
 }
+img[alt~="dod"]{
+    display: none;
+}
+
 img[alt~="hero-image6"] {
     width: 100%;
-    padding-inline: 20px;
+    padding-inline: 13px;
     margin-top: 20px;
 }
+
 .content-5 .photos {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    gap: 20px;
+    gap: 15px;
+    margin: 20px 15px;
 }
-.content-5 .paragraph{
+.content-5 .photos-1{
+    display: none;
+}
+
+.content-5 .paragraph {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
-img[alt~="img6"]{
+
+img[alt~="img6"] {
     width: 100%;
 }
-img[alt~="img7"]{
+
+img[alt~="img7"] {
     width: 100%;
     margin-top: 50px;
 }
-.content-5 h3{
+
+.content-5 h3 {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(247, 121, 142);
 }
-.content-5 h1{
-font-size: 2rem;
-padding-inline: 30px;
+
+.content-5 h1 {
+    text-align: center;
+    color: rgb(1, 55, 106);
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-top: 10px;
+    line-height: 2.5rem;
+    padding-bottom: 15px;
 }
-.content-5 p {
-    padding-inline: 10px;
-}
-.content-5 button{
+
+.content-5 button {
     background-color: white;
     border: 2px solid #2e2e2ec9;
     border-radius: 15px;
     padding: 5px 15px;
-    margin: 20px;
+    margin: 25px;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
 }
+
 .content-5 a {
     text-decoration: none;
 }
-.content-6 {
+
+.content6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(images/—Pngtree—color\ pencil\ chalk\ erased\ blackboard_1168222\ 1.png);
-    background-size:100% 100%;
+    background-image: url("images/—Pngtree—color\ pencil\ chalk\ erased\ blackboard_1168222\ 1.png");
+    background-size: 100% 100%;
     margin: 20px;
     background-repeat: no-repeat;
 }
-.content-6 h3{
+
+.content-6 h3 {
     font-size: 0.8rem;
     color: white;
     font-weight: 300;
     text-align: center;
     padding: 30px 70px;
 }
+
 .content-6 p {
     color: white;
     text-align: center;
     line-height: 2rem;
     font-size: 1.3rem;
     font-weight: 300;
-    padding-inline:10px;
+    padding-inline: 10px;
 }
-@media screen and (min-width:375px) {
-    .content-6 p {
-        font-size: 1.5rem;
-        padding-inline: 27px;
-    }
-}
+
 .content-6 button {
     border-radius: 20px;
     border: none;
@@ -203,9 +266,11 @@ padding-inline: 30px;
     margin-top: 30px;
     margin-bottom: 15rem;
     color: rgb(1, 55, 106);
+    background-color: white;
     font-size: 0.9rem;
     font-weight: 600;
 }
+
 .content-7 {
     color: rgb(1, 55, 106);
     margin: 15px;
@@ -215,11 +280,13 @@ padding-inline: 30px;
     padding-top: 30px;
     padding-bottom: 15px;
 }
-.content-7 h1{
+
+.content-7 h1 {
     padding-inline: 14px;
     font-size: 1.4rem;
 }
-.content-7 button{
+
+.content-7 button {
     margin: 20px;
     padding: 10px 30px;
     text-align: center;
@@ -229,6 +296,11 @@ padding-inline: 30px;
     border: 1px solid black;
     font-size: 0.9rem;
 }
+.content-7 a{
+    text-decoration: none;
+    color: #333333;
+}
+
 .content-8 h3 {
     font-size: 0.9rem;
     font-weight: 600;
@@ -236,25 +308,32 @@ padding-inline: 30px;
     display: flex;
     margin: 20px;
 }
+
 .content-8 h2 {
     color: rgb(1, 55, 106);
     font-size: 1.5rem;
+    font-weight: 500;
     margin: 20px;
 }
+
 .content-8 p {
     font-size: 1.01rem;
     color: #333333;
     font-weight: 600;
     margin: 20px;
 }
+
 .content-9 {
     background-color: #f4f8fd;
     text-align: center;
-    padding:35px 25px 0 25px
+    padding: 35px 25px 0 25px;
+    position: relative;
 }
+
 .content-9 #wrapper {
     background-color: white;
 }
+
 .content-9 #topbar {
     padding: 20px 0px;
     padding-inline: 20px;
@@ -262,49 +341,61 @@ padding-inline: 30px;
     align-items: center;
     gap: 15px;
 }
-.content-9 #bottombar{
+
+.content-9 #bottombar {
     padding-top: 10px;
     padding-inline: 20px;
     padding-bottom: 20px;
     font-size: 0.8rem;
+    font-weight: 500;
     line-height: 1.05rem;
     text-align: left;
-    }
+}
+
 .content-9 h1 {
     font-size: 0.85rem;
 }
+
 .content-9 p {
-font-size: 0.8rem;
-padding-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 5px;
 }
-.content-9 img {
-    float: right;
+
+img[alt~="group"] {
+    position: absolute;
+    right: 5px;
+    top: 15px;
 }
-/* .content-9 button {
-    border: none;
-    border-radius: 15px;
-    margin: 30px 5px;
-} */
+
 .content-9 button {
     border: none;
     border-radius: 20px;
     margin: 30px 5px;
 }
-img[alt~=rightarrow]{
+
+img[alt~=rightarrow] {
     background-image: url(images/right\ arrow.png);
     background-size: contain;
     padding: 5px;
 }
-img[alt~="leftarrow"]{
+
+img[alt~="leftarrow"] {
     background-color: #f7f9fc;
     padding: 4px;
     border: 1px solid #072e4b;
     border-radius: 15px;
 }
+
 .footer {
-    background-color:#072e4b;
+    background-color: #072e4b;
     color: white;
     margin-top: 40px;
+}
+.footer .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer h1 {
     font-size: 1.35rem;
@@ -312,15 +403,10 @@ img[alt~="leftarrow"]{
     padding: 20px;
     text-align: center;
 }
-@media screen and (min-width:375px) {
-    .footer h1{
-        font-size: 1.4rem;
-    }
-}
 .email {
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     padding-inline: 20px;
     padding-bottom: 20px;
@@ -337,7 +423,7 @@ img[alt~="leftarrow"]{
     border: none;
     padding: 11px 3.5px;
 }
-.email input{
+.email input {
     padding: 16px;
     border: none;
     border-radius: 25px;
@@ -351,43 +437,543 @@ img[alt~="leftarrow"]{
     padding-bottom: 25px;
     border-bottom: 2px solid rgb(20, 59, 87);
 }
+
 #menu p {
     font-size: 0.9rem;
     padding: 10px 5px;
     font-weight: 100;
     text-align: center;
-
 }
+
 .footer li {
     padding: 10px 28px 40px 35px;
     list-style: none;
     font-size: 0.9rem;
 }
-@media  screen and (min-width:375px) {
-.footer li {
-    padding: 20px 40px;
-}    
-}
+
 .horizontal-list {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
+
 .contact a {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color:rgb(230, 81, 107, 100%);
+    color: rgb(230, 81, 107, 100%);
     font-size: 1.5rem;
     padding: 15px;
 }
-.Email a, li a {
+
+.Email a,
+li a {
     color: white;
     text-decoration: none;
 }
-.footer h6{
+
+.footer h6 {
     text-align: center;
     font-weight: 100;
     padding-top: 20px;
     padding-bottom: 25px;
 }
+
+@media screen and (min-width:375px) {
+    .head h1 {
+        padding: 40px 20px 25px 20px;
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+    }
+
+    .content img {
+        width: 9%;
+        margin: 18px;
+    }
+
+    .content-2 #img1,
+    #img2,
+    #img3,
+    #img4 {
+        padding: 12rem 1rem 2rem 2rem;
+    }
+
+    .content-2 button {
+        margin-top: 2rem;
+    }
+
+    img[alt~="hero-image6"] {
+        width: 95%;
+        padding-inline: 20px;
+        margin-top: 20px;
+    }
+
+    .content-6 h3 {
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+    .content-6 p {
+        font-size: 1.5rem;
+        padding-inline: 27px;
+    }
+
+    .content-9 {
+        padding: 35px 50px 0 25px;
+    }
+
+    .content-9 p {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .content-9 article {
+        font-size: 0.9rem;
+    }
+
+    img[alt~="group"] {
+        right: 25px;
+        top: 15px;
+    }
+
+    .content-9 #bottombar {
+        padding-inline: 25px;
+    }
+
+    .footer h1 {
+        font-size: 1.4rem;
+    }
+
+    .footer li {
+        padding: 20px 40px;
+    }
+}
+@media screen and (min-width:768px) {
+    .content-2 #img1, #img2, #img3, #img4{
+        padding: 18rem 1rem 5rem 4rem;
+        margin-inline: 15px;
+        margin-top: 25px; 
+        font-size: 2rem;
+    }
+    .content-2 button {
+        font-size: 1rem;
+        padding: 8px 18px;
+        border-radius: 20px;
+        margin-top: 2rem;
+    }
+    .footer .horizontal-list{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-left: 100px;
+    }
+    .footer .Email{
+        text-align: center;
+    }
+}
+@media screen and (min-width:1024px) {
+    nav {
+        padding: 20px;
+        margin: 0;
+    }
+
+    nav .desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-inline: 50px;
+        padding: 0;
+    }
+
+    img[alt~="aliwala-logo"] {
+        display: none;
+    }
+
+    img[alt~="menu"] {
+        display: none;
+    }
+
+    .desktop a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .desktop button {
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 2.5px solid #333333;
+        background-color: white;
+    }
+
+    .head {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        background-image:
+            url("images/Screenshot\ 2024-06-01\ at\ 12.45.png");
+            background-size: 100% 100%;
+    }
+
+    .head h1 {
+        text-align: left;
+        line-height: 4rem;
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 30px 350px 50px 50px;
+    }
+
+    .head .app {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-inline: 50px;
+    }
+
+    img[alt~="download-app"] {
+        width: 90%;
+        padding: 25px;
+    }
+
+    img[alt~="frame"] {
+        margin-bottom: 20px;
+    }
+
+    .head img {
+        padding: 8px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fcf9f9;
+        padding: 15px;
+    }
+
+    .content img {
+        width: 3.5%;
+        margin-inline: 20px;
+    }
+
+    .content .text {
+        padding-right: 40px;
+        border-right: 1px solid #999999;
+    }
+
+    .content h1 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .content p {
+        padding-top: 0px;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+
+    .content-2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        width: 100%;
+        padding:0;
+        margin-inline: 0;
+        margin-top: 0;
+    }
+    .content-2 p{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .content-2 button {
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 5px 13px;
+        margin-top: 2rem;
+    }
+    .content-2 #img1{
+        background-image: url("images/Rectangle 12773.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 0;
+        margin-inline: 10px;
+        padding: 16rem 6rem 4rem 2rem;
+        margin-top: 0
+
+    }
+    .content-2 #img2 {
+        background-image: url("desktopimages/indeximages/books.png");
+        padding: 16rem 3rem 4rem 2rem;
+        margin-top: 0;
+        margin-inline: 10px;
+
+    }
+    .content-2 #img3, .content-2 #img4{
+        background-image: url("images/Frame 278.png");
+        padding:4rem 8rem 2rem 2rem;
+        margin-inline:10px;
+        margin-top: 0
+    }
+    .content-2 #img4 {
+        background-image: url("desktopimages/indeximages/tape.png");
+        margin-top: 20px;
+    }
+    .content-3 h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .content-3 #img-5{
+        display: none;
+    }
+    .content-3 #img-6{
+        display: flex;
+        margin-inline: 20px;
+        gap: 24px;
+    }
+    .content-3 img {
+        width: 100%;
+    }
+    .content-3 p{
+        font-size: 1rem;
+        font-weight:700;
+    }
+    .content-4 img{
+        display: block;
+        width: 100%;
+    }
+    img[alt~="hero-image6"]{
+        display: none;
+    }
+    .content-5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .content-5 .photos-1{
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-inline: 40px;
+        gap: 30px;
+        width: 60%;
+    }
+    .content-5 p {
+        padding-top: 0px;
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+    }
+    .content-5 .photos{
+  display: none;
+    }
+    .content-5 .paragraph{
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        width: 40%;
+        margin-inline:40px;
+        margin-top: 50px;
+    }
+    .content-5 h1 {
+        text-align: left;
+        font-size: 2.8rem;
+        padding-top: 15px;
+        line-height: 2.5rem;
+        padding-bottom: 50px;
+    }
+    .content-5 button {
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 20px;
+        padding: 8px 30px;
+        margin: 50px 0 0 0;
+    }
+    .content-6 {
+        background-image: url("desktopimages/indeximages/—Pngtree—color\ pencil\ chalk\ erased\ blackboard_1168222\ 1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .content6{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin-right:250px;
+    }
+    .content-6 h3 {
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+    .content-6 p {
+        line-height: 3rem;
+        font-size: 1.9rem;
+        font-weight: 400;
+        padding-inline: 100px;
+        padding-top: 40px;
+    }
+    .content-6 button {
+        border-radius: 30px;
+        background-color: white;
+        padding: 17px 40px;
+        margin-top: 30px;
+        margin-bottom: 5rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    
+.content-7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-7 h1 {
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 600;
+    width: 70%;
+    padding-inline: 0px;
+}
+
+.content-7 button {
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 55px;
+}
+.content-7 a {
+    text-decoration:none ;
+    color: black;
+}
+.bottomwrapper {
+    display: flex;
+}
+.content-8{
+    width: 40%;
+    margin-inline: 50px;
+}
+.content-8 h3 {
+    font-size: 1.3rem;
+}
+.content-8 h2 {
+    font-size: 2.2rem;
+}
+.content-8 p{
+    font-size: 1.3rem;
+}
+.content-9{
+    width: 60%
+}
+
+.footer h1{
+    font-size: 2.3rem;
+    padding-inline: 200px;
+    padding-top: 50px;
+}
+
+.email {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-inline: 220px;
+    position: relative;
+}
+.email button {
+    position: absolute;
+    right: 220px;
+    font-size: 1rem;
+    padding-inline: 20px;
+}
+.email button:hover{
+    cursor: pointer;
+}
+.email input {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+.footer #menu{
+   display: flex;
+   flex-direction: row;
+   padding-top: 10px;
+   padding-bottom: 25px;
+}
+.footer #menu p{
+    text-align: left;
+    font-size: 1rem;
+}
+.footer li {
+    font-size: 1rem;
+}
+.footer .top{
+    display: flex;
+    align-items: start;
+    width: 65%;
+    margin-left:50px ;
+}
+.footer .horizontal-list{
+    width: 100%;
+    margin: 0px;
+}
+.footer #contact{
+    width: 50%;
+    margin-left: 0px;
+    font-size: 1.5rem;
+}
+.footer #contact p {
+    font-size: 1.1rem;
+}
+.contact a {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding-block: 20px;
+    padding-inline: 0px;
+}
+.footer .last {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px;
+}
+.footer .Email{
+    text-align: left;
+}
+}
+@media screen and (min-width:1150px) {
+    .content-2 #img2 {
+        width: 30%;
+    }
+    .content-2 #img3, .content-2 #img4{
+        width: 120%;
+    }
+    #menu .top p{
+        font-size: 1.3rem;
+    }
+    .footer .horizontal-list{
+        width: 80%;
+        font-size: 2rem;
+    }
+    .footer .last{
+        justify-content: space-between;
+        margin-inline: 50px;
+        font-size: 1.8rem;
+    }
+    .footer li{
+        font-size: 1.3rem;
+    }
+#contact a {
+    font-size: 2rem;
+}
+    }
