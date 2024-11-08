@@ -51,7 +51,8 @@ nav .desktop {
     .main-wrapper h6{
         font-size: 0.9rem;
         font-weight: 500;
-        color: #e6516B;
+        color:#ff4d4d;
+
         margin: 20px 20px 10px 20px;
     }
     .main-wrapper article{
@@ -133,7 +134,8 @@ nav .desktop {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: rgb(230, 81, 107, 100%);
+    color:#ff4d4d;
+
     font-size: 1.5rem;
     padding: 15px;
 }
@@ -220,7 +222,8 @@ li a {
         .main-wrapper h6{
             font-size: 1.3rem;
             font-weight: 600;
-            color: #e6516B;
+            color:#ff4d4d;
+
             margin: 40px 40px 20px 40px;
         }
         .main-wrapper article{

@@ -206,7 +206,7 @@ img[alt~="img7"] {
 .content-5 h3 {
     font-size: 0.9rem;
     font-weight: 600;
-    color: rgb(247, 121, 142);
+    color:#ff4d4d;
 }
 
 .content-5 h1 {
@@ -304,7 +304,7 @@ img[alt~="img7"] {
 .content-8 h3 {
     font-size: 0.9rem;
     font-weight: 600;
-    color: rgb(230, 81, 107);
+    color:#ff4d4d;
     display: flex;
     margin: 20px;
 }
@@ -452,16 +452,23 @@ img[alt~="leftarrow"] {
 }
 
 .horizontal-list {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    margin: 5% 10%;
+    gap: 60px;
+    font-size: 0.9rem;
 }
 
 .contact a {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: rgb(230, 81, 107, 100%);
+    color:#ff4d4d;
     font-size: 1.5rem;
     padding: 15px;
 }
@@ -547,6 +554,24 @@ li a {
     .footer li {
         padding: 20px 40px;
     }
+    .horizontal-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        margin: 5% 10%;
+        gap: 60px;
+    }
+}
+@media screen and (min-width:390px) {
+    .horizontal-list {
+        width: 80%;
+        height: 30%;
+        margin: 5% 10%;
+        gap: 40px;
+    }
 }
 @media screen and (min-width:768px) {
     .content-2 #img1, #img2, #img3, #img4{
@@ -561,16 +586,21 @@ li a {
         border-radius: 20px;
         margin-top: 2rem;
     }
-    .footer .horizontal-list{
+    #horizontal-list {
         display: flex;
         justify-content: center;
-        width: 70%;
-        margin-left: 100px;
+    }
+    .horizontal-list {
+        display: flex;
+        width: 50%;
+        margin-block: 5%;
+        gap: 60px;
     }
     .footer .Email{
         text-align: center;
     }
 }
+
 @media screen and (min-width:1024px) {
     nav {
         padding: 20px;
@@ -923,8 +953,9 @@ li a {
     margin-left:50px ;
 }
 .footer .horizontal-list{
-    width: 100%;
-    margin: 0px;
+    width: 70%;
+    margin: 5% 10%;
+    gap: 40px;
 }
 .footer #contact{
     width: 50%;
@@ -963,7 +994,7 @@ li a {
     }
     .footer .horizontal-list{
         width: 80%;
-        font-size: 2rem;
+        gap: 10px;
     }
     .footer .last{
         justify-content: space-between;
