@@ -484,12 +484,30 @@ li a {
             width: 90%;
         }
         .horizontal-list {
-            width: 80%;
+            width: 100%;
             height: 30%;
-            margin: 5% 10%;
-            gap: 40px;
+            gap: 10px;
         }
         
+    }
+    @media screen and (min-width:768px) {
+        #horizontal-list {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        .horizontal-list {
+            display: flex;
+            width: 100%;
+            margin-block: 5%;
+            gap: 50px;
+        }
+        .footer .Email{
+            text-align: center;
+        }
+        .footer li {
+            padding-inline: 20px;
+        }
     }
     @media screen and (min-width:768px) {
         .links{
@@ -797,94 +815,132 @@ img[alt~="group"] {
     bottom: -15px;
     left: 10px;
 }
-
-    .footer h1{
-        font-size: 2.3rem;
-        padding-inline: 240px;
-        padding-top: 50px;
+.peter {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: -80px;
+    }
+    img[alt~=rightarrow] {
+        padding: 10px;
     }
     
+    img[alt~="leftarrow"] {
+        padding: 9px;
+        border-radius: 20px;
+    }
+    img[alt~="group"] {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    }
+    .content-9 .buttons {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    }
+    .footer h1{
+    font-size: 2.3rem;
+    padding-inline: 200px;
+    padding-top: 50px;
+    }
     .email {
-        padding-top: 20px;
-        padding-bottom: 50px;
-        padding-inline: 220px;
-        position: relative;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-inline: 220px;
+    position: relative;
     }
     .email button {
-        position: absolute;
-        right: 220px;
-        font-size: 1rem;
-        padding-inline: 20px;
+    position: absolute;
+    right: 220px;
+    font-size: 1rem;
+    padding-inline: 20px;
     }
     .email button:hover{
-        cursor: pointer;
+    cursor: pointer;
     }
     .email input {
-        font-size: 0.9rem;
-        font-weight: 600;
-        padding-left: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 25px;
     }
-    
     .footer #menu{
-       display: flex;
-       flex-direction: row;
-       padding-top: 10px;
-       padding-bottom: 25px;
+   display: flex;
+   flex-direction: row;
+   padding-top: 10px;
+   padding-bottom: 25px;
     }
     .footer #menu p{
-        text-align: left;
-        font-size: 1rem;
+    text-align: left;
+    font-size: 1rem;
     }
     .footer li {
-        font-size: 1rem;
+    font-size: 1rem;
     }
     .footer .top{
-        display: flex;
-        align-items: start;
-        width: 45%;
-        margin-left:50px;
+    display: flex;
+    align-items: start;
+    width: 27%;
+    margin-left:50px ;
     }
-    .footer .horizontal-list{
-        width: 70%;
-        margin: 5% 10%;
-        gap: 40px;
+    .horizontal-list{
+    display: flex;
+    width: 100%;
+    margin: 5% 5%;
     }
     .footer #contact{
-        width: 50%;
-        margin-left: 0px;
-        font-size: 1.5rem;
+    width: 33%;
+    margin-left: 0px;
+    font-size: 1.5rem;
     }
     .footer #contact p {
-        font-size: 1.1rem;
-    }
-    .Email a{
-        display: flex;
-        justify-content: flex-start;
+    font-size: 1.1rem;
     }
     .contact a {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 1.5rem;
-        padding-block: 20px;
-        padding-inline: 0px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding-block: 20px;
+    padding-inline: 0px;
     }
     .footer .last {
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: space-between;
-        margin-inline: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px;
     }
     .footer .Email{
-        text-align: left;
+    text-align: left;
+    }
+    .Email a {
+        display: flex;
+        justify-content: flex-start;
     }
     }
     @media screen and (min-width:1150px) {
         #menu .top p{
             font-size: 1.3rem;
         }
+        .footer h1 {
+            font-size: 3rem;
+        }
+        .email {
+            padding-inline: 235px;
+        }
+        .email input {
+            font-size: 1rem;
+            padding-block: 20px;
+            border-radius: 50px;
+        }
+        .email button {
+            right: 240px;
+            font-size: 1.2rem;
+            padding-block: 10px;
+        }
         .footer .horizontal-list{
-            width: 70%;
-            gap: 40px;
+            width: 100%;
+            gap: 10px;
+            margin-inline: 20px;
         }
         .footer .last{
             justify-content: space-between;
@@ -894,8 +950,12 @@ img[alt~="group"] {
         .footer li{
             font-size: 1.3rem;
         }
+        #contact {
+            width: 30%;
+            margin-left: 20px;
+        }
         #contact a {
         font-size: 2rem;
-         }
+        }
     }
  
