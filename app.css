@@ -168,15 +168,6 @@ img[alt~="LOGOS"]{
     font-weight: 300;
     padding-inline:10px;
 }
-.content-7 h1{
-    padding-inline: 10px;
-    font-size: 1.4rem;
-}
-.content-8 p {
-    font-size: 1.01rem;
-    color: #333333;
-    margin: 20px;
-}
 
 .content-6 button {
     border-radius: 20px;
@@ -188,6 +179,16 @@ img[alt~="LOGOS"]{
     font-size: 0.9rem;
     font-weight: 600;
 }
+.content-7 h1{
+    padding-inline: 10px;
+    font-size: 1.4rem;
+}
+.content-8 p {
+    font-size: 1.01rem;
+    color: #333333;
+    margin: 20px;
+}
+
 .content-7 {
     color: rgb(1, 55, 106);
     margin: 15px;

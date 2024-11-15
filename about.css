@@ -200,7 +200,7 @@ img[alt~="books"]{
     color: white;
     font-weight: 300;
     text-align: center;
-    padding: 30px 70px;
+    padding: 40px 70px;
 }
 .content-6 p {
     color: white;
@@ -210,6 +210,7 @@ img[alt~="books"]{
     font-weight: 300;
     padding-inline:10px;
 }
+
 .content-6 button {
     border-radius: 20px;
     border: none;
@@ -217,7 +218,6 @@ img[alt~="books"]{
     margin-top: 30px;
     margin-bottom: 15rem;
     color: rgb(1, 55, 106);
-    background-color: white;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -234,8 +234,8 @@ img[alt~="books"]{
     padding-inline: 14px;
     font-size: 1.4rem;
 }
-.content-7 button{
-    margin: 20px;
+.content-7 button {
+    margin: 20px 70px;
     padding: 10px 30px;
     text-align: center;
     background-color: white;
@@ -244,7 +244,10 @@ img[alt~="books"]{
     border: 1px solid black;
     font-size: 0.9rem;
 }
-
+.content-7 a{
+    text-decoration: none;
+    color: #333333;
+}
 .content-8 h3 {
     font-size: 0.9rem;
     font-weight: 600;
@@ -261,9 +264,9 @@ img[alt~="books"]{
 }
 
 .content-8 p {
-    font-size: 1.01rem;
+    font-size: 1rem;
     color: #333333;
-    font-weight: 600;
+    font-weight: 400;
     margin: 20px;
 }
 
@@ -407,13 +410,14 @@ li a {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 30%;
-    margin: 5% 10%;
-    gap: 60px;
+    gap: 100px;
     font-size: 0.9rem;
+}
+.horizontal-list li {
+    padding-block: 20px;
 }
 .contact a {
     display: flex;
@@ -452,12 +456,10 @@ li a {
     .horizontal-list {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
-        height: 30%;
-        margin: 5% 10%;
-        gap: 60px;
+        gap: 80px;
     }
     
 }
@@ -486,29 +488,11 @@ li a {
         .horizontal-list {
             width: 100%;
             height: 30%;
-            gap: 10px;
+            gap: 80px;
         }
         
     }
-    @media screen and (min-width:768px) {
-        #horizontal-list {
-            display: flex;
-            justify-content: center;
-            width: 50%;
-        }
-        .horizontal-list {
-            display: flex;
-            width: 100%;
-            margin-block: 5%;
-            gap: 50px;
-        }
-        .footer .Email{
-            text-align: center;
-        }
-        .footer li {
-            padding-inline: 20px;
-        }
-    }
+
     @media screen and (min-width:768px) {
         .links{
             display: flex;
@@ -539,6 +523,9 @@ li a {
         #horizontal-list {
             display: flex;
             justify-content: center;
+            width: 100%;
+            margin-block: 5%;
+            gap: 50px;
         }
         .horizontal-list {
             display: flex;
@@ -548,6 +535,12 @@ li a {
         }
         .content-3 {
             width: 100%;
+        }
+        .footer .Email{
+            text-align: center;
+        }
+        .footer li {
+            padding-inline: 20px;
         }
     }
     @media screen and (min-width:1024px) {
@@ -705,13 +698,15 @@ li a {
             background-size: 100% 100%;
             background-repeat: no-repeat;
             margin: 0;
+            align-items: center;
+            width: 100%;
         }
         .content6{
             background-image: none;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 78%;
+            width: 85%;
             margin-right:250px;
         }
         .content-6 h3 {
@@ -799,12 +794,6 @@ li a {
     left: -50px;
     border: 1px solid #f7f9fc;
 }
-.peter {
-    display: block;
-    position: absolute;
-    bottom: -60px;
-    right: -90px;
-}
 img[alt~="group"] {
     position: absolute;
     right: -20px;
@@ -880,16 +869,15 @@ img[alt~="group"] {
     .footer .top{
     display: flex;
     align-items: start;
-    width: 27%;
+    width: 50%;
     margin-left:50px ;
     }
     .horizontal-list{
     display: flex;
-    width: 100%;
-    margin: 5% 5%;
+    width: 70%;
     }
     .footer #contact{
-    width: 33%;
+    width: 50%;
     margin-left: 0px;
     font-size: 1.5rem;
     }
@@ -921,6 +909,9 @@ img[alt~="group"] {
         #menu .top p{
             font-size: 1.3rem;
         }
+        .footer .top {
+            width: 60%;
+        }
         .footer h1 {
             font-size: 3rem;
         }
@@ -938,7 +929,7 @@ img[alt~="group"] {
             padding-block: 10px;
         }
         .footer .horizontal-list{
-            width: 100%;
+            width: 70%;
             gap: 10px;
             margin-inline: 20px;
         }
