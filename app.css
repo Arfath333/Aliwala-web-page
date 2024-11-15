@@ -86,6 +86,9 @@ img[alt~="download-app"] {
     line-height: 1.5rem;
     text-align: center;
 }
+img[alt~="group1"]{
+    display: none;
+}
 .content-1{
     margin-top: 45px;
     margin-left: 20px;
@@ -111,28 +114,35 @@ img[alt~="download-app"] {
 .content-2 {
     margin-top: 50px;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .content-2 h3{
     font-size: 0.7rem;
     color: rgb(247, 121, 142);
     text-align: center;
-    margin: 10px;
 }
 .content-2 h1 {
     color: rgb(6, 66, 122);
     text-align: center;
     font-weight: 600;
+    padding-inline: 40px;
 }
 .content-2 p{
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #747474;
-    padding: 15px 10px;
+    padding: 15px 20px;
     text-align: center;
+}
+.content-2 .photos{
+    display: flex;
+    justify-content: center;
+}
+
+img[alt~="logos"]{
+    width: 85%;
+}
+img[alt~="LOGOS"]{
+    display: none;
 }
 .content-6 {
     display: flex;
@@ -158,17 +168,16 @@ img[alt~="download-app"] {
     font-weight: 300;
     padding-inline:10px;
 }
-@media screen and (min-width:375px) {
-    .head h1 {
-        padding: 40px 20px 25px 20px;
-        font-size: 2.1rem;
-        line-height: 2.7rem;
-    }
-    .content-6 p {
-        font-size: 1.5rem;
-        padding-inline: 27px;
-    }
+.content-7 h1{
+    padding-inline: 10px;
+    font-size: 1.4rem;
 }
+.content-8 p {
+    font-size: 1.01rem;
+    color: #333333;
+    margin: 20px;
+}
+
 .content-6 button {
     border-radius: 20px;
     border: none;
@@ -200,32 +209,39 @@ img[alt~="download-app"] {
     border: 1px solid black;
     font-size: 0.9rem;
 }
+
 .content-8 h3 {
     font-size: 0.9rem;
     font-weight: 600;
-    color: rgb(230, 81, 107);
+    color:#ff4d4d;
     display: flex;
-    margin-inline: 20px;
+    margin: 20px;
 }
+
 .content-8 h2 {
     color: rgb(1, 55, 106);
     font-size: 1.5rem;
+    font-weight: 500;
     margin: 20px;
 }
+
 .content-8 p {
     font-size: 1.01rem;
     color: #333333;
-    font-weight: 600;
     margin: 20px;
 }
+
 .content-9 {
     background-color: #f4f8fd;
     text-align: center;
-    padding:35px 25px 0 25px
+    padding: 35px 25px 0 25px;
+    position: relative;
 }
+
 .content-9 #wrapper {
     background-color: white;
 }
+
 .content-9 #topbar {
     padding: 20px 0px;
     padding-inline: 20px;
@@ -233,50 +249,73 @@ img[alt~="download-app"] {
     align-items: center;
     gap: 15px;
 }
-.content-9 #bottombar{
+
+.content-9 #bottombar {
     padding-top: 10px;
     padding-inline: 20px;
     padding-bottom: 20px;
     font-size: 0.8rem;
+    font-weight: 500;
     line-height: 1.05rem;
     text-align: left;
-    }
+}
+
 .content-9 h1 {
     font-size: 0.85rem;
 }
+
 .content-9 p {
-font-size: 0.8rem;
-padding-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 5px;
 }
-.content-9 img {
-    float: right;
+
+img[alt~="group"] {
+    position: absolute;
+    right: 5px;
+    top: 15px;
 }
+
 .content-9 button {
     border: none;
     border-radius: 20px;
-    margin: 25px 5px;
+    margin: 30px 5px;
 }
-img[alt~=rightarrow]{
+
+img[alt~=rightarrow] {
     background-image: url(images/right\ arrow.png);
     background-size: contain;
-    padding: 5px;
+    padding: 6px;
 }
-img[alt~="leftarrow"]{
+
+img[alt~="leftarrow"] {
     background-color: #f7f9fc;
-    padding: 4px;
-    border: 1px solid #326a96;
-    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #072e4b;
+    border-radius: 18px;
+}
+.peter {
+    display: none;
 }
 .footer {
-    background-color:#072e4b;
+    background-color:#062a46;
     color: white;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .footer h1 {
     font-size: 1.35rem;
     font-weight: 300;
     padding: 20px;
     text-align: center;
+}
+.email {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(20, 59, 87);
 }
 .email {
     position: relative;
@@ -304,6 +343,11 @@ img[alt~="leftarrow"]{
     border-radius: 25px;
     font-size: 0.73rem;
 }
+.footer .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 .footer #menu {
     display: flex;
     flex-direction: column;
@@ -313,20 +357,28 @@ img[alt~="leftarrow"]{
     border-bottom: 2px solid rgb(20, 59, 87);
 }
 #menu p {
-    font-size: 0.8rem;
-    padding: 10px 10px;
-    font-weight: 400;
-    text-align: center;
-}
-.footer li {
-    padding: 10px 28px 40px 35px;
-    list-style: none;
     font-size: 0.9rem;
+    padding: 10px 5px;
+    font-weight: 100;
+    text-align: center;
+
+}
+li a {
+    color: white;
+    text-decoration: none;
 }
 .horizontal-list {
+    list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
-    flex-wrap:wrap;
+    align-items: center;
+    gap: 80px;
+    font-size: 0.9rem;
+}
+.horizontal-list li {
+    padding-block: 20px;
 }
 .contact a {
     display: flex;
@@ -336,9 +388,12 @@ img[alt~="leftarrow"]{
     font-size: 1.5rem;
     padding: 15px;
 }
-.Email a, li a {
+.Email a{
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer h6{
     text-align: center;
@@ -347,6 +402,11 @@ img[alt~="leftarrow"]{
     padding-bottom: 25px;
 }
 @media screen and (min-width:375px) {
+    .head h1 {
+        padding: 40px 20px 25px 20px;
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+    }
     .content-1 h1 {
         margin-inline: 10px;
         font-size: 1.5rem;
@@ -366,6 +426,9 @@ img[alt~="leftarrow"]{
         font-weight: 600;
         margin-inline: 15px;
     }
+    .content-2 button {
+        display: none;
+    }
     .content-6 h3{
         font-size: 0.85rem;
         font-weight: 200;
@@ -373,21 +436,59 @@ img[alt~="leftarrow"]{
     }
     .content-6 p {
         padding: 0 20px;
+        font-size: 1.5rem;
+        padding-inline: 27px;
     }
     .content img{
-        width: 36px;
-    }
-    .footer h1 {
-        font-size: 1.4rem;
-    }
+        width: 36px;}
+   
+        .content-9 #bottombar {
+            padding-inline: 25px;
+        }
 
+        .footer h1 {
+            font-size: 1.4rem;
+        }
+        
+        .footer li {
+            padding: 20px 40px;
+        }
+        .horizontal-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            height: 30%;
+            margin: 0% 0%;
+            padding-inline: 20px;
+            gap: 0px;
+        }
+    }
+@media screen and (min-width:390px) {
+    .horizontal-list {
+        width: 100%;
+        height: 30%;
+        gap: 10px;
+    }
+}
+@media screen and (min-width:768px) {
+    #horizontal-list {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .horizontal-list {
+        display: flex;
+        width: 100%;
+        margin-block: 5%;
+        gap: 50px;
+    }
+    .footer .Email{
+        text-align: center;
+    }
     .footer li {
-        padding: 10px 50px 33px 50px;
-    }  
-    #menu p {
-        font-size: 0.9rem;
-        font-weight: 300;
-        margin-inline: 30px;
+        padding-inline: 20px;
     }
 }
 @media screen and (min-width:1024px) {
@@ -426,5 +527,341 @@ img[alt~="leftarrow"]{
         border: 2.5px solid #333333;
         background-color: white;
     }
+.content-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: start;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.leftside{
+    width: 60%;
+}
+.leftside h1{
+    font-size: 3.3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    width: 95%;
+    margin-top: 35px;
+}
+.leftside p{
+    font-size: 1rem;
+    width: 80%;
+    padding: 65px 0;
+}
+img[alt~="mobile"]{
+    display: none;
+}
+img[alt~="group1"]{
+    display: block;
+}
+.rightside {
+    width: 40%;
+}
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fcf9f9;
+        margin-block: 20px;
+    }
+    .content img {
+        width: 3.5%;
+        margin-inline: 20px;
+    }
+    .content .text {
+        padding-right: 20px;
+        border-right: 1px solid #999999;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap:10px ;
+    }
+    .content h1 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .content p {
+        padding-top: 0px;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+    .content-2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .content-2 h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left;
+        margin-inline: 70px;
+    }
+    .content-2 h1{
+        text-align: left;
+        margin-inline: 30px;
+    }
+    .content-2 p{
+        text-align: left;
+        margin-inline: 70px;
+        /* font-size: 500; */
+    }
+    .content-2 button {
+        display: block;
+        background-color: white;
+        font-size: 1rem;
+        padding: 8px 20px;
+        margin-inline: 60px;
+        border-radius: 20px;
+    }
+    img[alt~="logos"]{
+        display: none;
+    }
+    img[alt~="LOGOS"]{
+        display: block;
+        width: 100%;
+    }
+    .content-6 {
+        background-image: url("desktopimages/indeximages/—Pngtree—color\ pencil\ chalk\ erased\ blackboard_1168222\ 1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .content6{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin-right:250px;
+    }
+    .content-6 h3 {
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+    .content-6 p {
+        line-height: 3rem;
+        font-size: 1.9rem;
+        font-weight: 400;
+        padding-inline: 100px;
+        padding-top: 40px;
+    }
+    .content-6 button {
+        border-radius: 30px;
+        background-color: white;
+        padding: 17px 40px;
+        margin-top: 30px;
+        margin-bottom: 5rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .content-7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+    .content-7 h1 {
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 600;
+    width: 70%;
+    padding-inline: 0px;
+    }
 
+    .content-7 button {
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 55px;
+    }
+    .content-7 a {
+    text-decoration:none ;
+    color: black;
+    }
+    .bottomwrapper {
+    display: flex;
+    }
+    .content-8{
+    width: 40%;
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .content-8 h3 {
+    font-size: 1.4rem;
+    margin: 10px 20px;
+    }
+    .content-8 h2 {
+    font-size: 2.2rem;
+    margin: 10px 20px;
+    }
+    .content-8 p{
+    font-size: 1.3rem;
+    }
+    .content-9{
+    width: 50%;
+    height: 280px;
+    margin: 165px 80px 50px 80px;
+    position: relative;
+    }
+    .content-9 #wrapper {
+    position: absolute;
+    width: 80%;
+    top: -165px;
+    left: -50px;
+    border: 1px solid #f7f9fc;
+    }
+    .peter {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: -80px;
+    }
+    img[alt~=rightarrow] {
+        padding: 10px;
+    }
+    
+    img[alt~="leftarrow"] {
+        padding: 9px;
+        border-radius: 20px;
+    }
+    img[alt~="group"] {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    }
+    .content-9 .buttons {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    }
+    .footer h1{
+    font-size: 2.3rem;
+    padding-inline: 200px;
+    padding-top: 50px;
+    }
+    .email {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-inline: 220px;
+    position: relative;
+    }
+    .email button {
+    position: absolute;
+    right: 220px;
+    font-size: 1rem;
+    padding-inline: 20px;
+    }
+    .email button:hover{
+    cursor: pointer;
+    }
+    .email input {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 25px;
+    }
+    .footer #menu{
+   display: flex;
+   flex-direction: row;
+   padding-top: 10px;
+   padding-bottom: 25px;
+    }
+    .footer #menu p{
+    text-align: left;
+    font-size: 1rem;
+    }
+    .footer li {
+    font-size: 1rem;
+    }
+    .footer .top{
+    display: flex;
+    align-items: start;
+    width: 27%;
+    margin-left:50px ;
+    }
+    .horizontal-list{
+    display: flex;
+    width: 100%;
+    margin: 5% 5%;
+    }
+    .footer #contact{
+    width: 33%;
+    margin-left: 0px;
+    font-size: 1.5rem;
+    }
+    .footer #contact p {
+    font-size: 1.1rem;
+    }
+    .contact a {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding-block: 20px;
+    padding-inline: 0px;
+    }
+    .footer .last {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px;
+    }
+    .footer .Email{
+    text-align: left;
+    }
+    .Email a {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width:1150px) {
+#menu .top {
+    width: 30%;
+}
+#menu .top p{
+    font-size: 1.3rem;
+}
+.footer h1 {
+    font-size: 3rem;
+}
+.email {
+    padding-inline: 235px;
+}
+.email input {
+    font-size: 1rem;
+    padding-block: 20px;
+    border-radius: 50px;
+}
+.email button {
+    right: 240px;
+    font-size: 1.2rem;
+    padding-block: 10px;
+}
+.footer .horizontal-list{
+    width: 100%;
+    gap: 10px;
+    margin-inline: 20px;
+}
+.footer .last{
+    justify-content: space-between;
+    margin-inline: 50px;
+    font-size: 1.8rem;
+}
+.footer li{
+    font-size: 1.3rem;
+}
+#contact {
+    width: 30%;
+    margin-left: 20px;
+}
+#contact a {
+font-size: 2rem;
+}
 }

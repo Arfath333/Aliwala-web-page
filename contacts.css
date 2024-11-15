@@ -74,7 +74,7 @@ img[alt~="download-app"] {
     justify-content: center;
 }
 .content-1 h1{
-    color: #194269;
+    color: #1a466e;
     font-size: 2rem;
     padding-top: 50px;
     padding-bottom: 15px;
@@ -172,7 +172,8 @@ display: none;
 }
 
 .content-8 p {
-    font-size: 1.01rem;
+    font-size: 1rem;
+    font-weight: 400;
     color: #333333;
     font-weight: 600;
     margin: 20px;
@@ -228,35 +229,40 @@ img[alt~="group"] {
     border-radius: 20px;
     margin: 30px 5px;
 }
-
 img[alt~=rightarrow] {
     background-image: url(images/right\ arrow.png);
     background-size: contain;
-    padding: 5px;
+    padding: 6px;
 }
 
 img[alt~="leftarrow"] {
     background-color: #f7f9fc;
-    padding: 4px;
+    padding: 5px;
     border: 1px solid #072e4b;
-    border-radius: 15px;
+    border-radius: 18px;
 }
-
+.peter {
+    display: none;
+}
 .footer {
-    background-color: #072e4b;
+    background-color:#062a46;
     color: white;
-    margin-top: 40px;
-}
-.footer .top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 25px;
 }
 .footer h1 {
     font-size: 1.35rem;
     font-weight: 300;
     padding: 20px;
     text-align: center;
+}
+.email {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(20, 59, 87);
 }
 .email {
     position: relative;
@@ -284,6 +290,11 @@ img[alt~="leftarrow"] {
     border-radius: 25px;
     font-size: 0.73rem;
 }
+.footer .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 .footer #menu {
     display: flex;
     flex-direction: column;
@@ -292,42 +303,46 @@ img[alt~="leftarrow"] {
     padding-bottom: 25px;
     border-bottom: 2px solid rgb(20, 59, 87);
 }
-
 #menu p {
     font-size: 0.9rem;
     padding: 10px 5px;
     font-weight: 100;
     text-align: center;
-}
 
-.footer li {
-    padding: 10px 28px 40px 35px;
-    list-style: none;
-    font-size: 0.9rem;
 }
-
-.horizontal-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color:#ff4d4d;
-    font-size: 1.5rem;
-    padding: 15px;
-}
-
-.Email a,
 li a {
     color: white;
     text-decoration: none;
 }
-
-.footer h6 {
+.horizontal-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    font-size: 0.9rem;
+}
+.horizontal-list li {
+    padding-block: 20px;
+}
+.contact a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:rgb(230, 81, 107, 100%);
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.Email a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h6{
     text-align: center;
     font-weight: 100;
     padding-top: 20px;
@@ -365,25 +380,60 @@ li a {
     .footer h1 {
         font-size: 1.4rem;
     }
-
-
+    
     .footer li {
         padding: 20px 40px;
     }
+    .horizontal-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        margin: 0% 0%;
+        padding-inline: 20px;
+        gap: 0px;
+    }
+    }
+    @media screen and (min-width:390px) {
+        .horizontal-list {
+            width: 100%;
+            height: 30%;
+            gap: 10px;
+        }
+        .email {
+            padding-inline: 40px;
+        }
+        .footer h1 {
+            font-size: 1.5rem;
+            padding-inline: 30px;
+        }
+        .email button {
+            right:50px;
+        }
     }
 @media screen and (min-width:768px) {
     img[alt~="Location"] {
         width: 100%;
         padding-inline: 0;
     }
-    .footer .horizontal-list{
+    #horizontal-list {
         display: flex;
         justify-content: center;
-        width: 70%;
-        margin-left: 100px;
+        width: 50%;
+    }
+    .horizontal-list {
+        display: flex;
+        width: 100%;
+        margin-block: 5%;
+        gap: 50px;
     }
     .footer .Email{
         text-align: center;
+    }
+    .footer li {
+        padding-inline: 20px;
     }
 }
 @media screen and (min-width:1024px) {  
@@ -579,108 +629,168 @@ li a {
         margin-block: 70px;
     }
     .content-8{
-        width: 40%;
+        width: 45%;
         margin-inline: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .content-8 h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin: 10px 0px;
     }
     .content-8 h2 {
         font-size: 2.2rem;
+        margin: 10px 20px;
+        margin-inline: 0;
     }
     .content-8 p{
-        font-size: 1.2rem;
-        font-weight: 400;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-inline: 0;
     }
     .content-9{
-        width: 60%
+        width: 60%;
+        height: 280px;
+        margin: 165px 80px 50px 100px;
+        position: relative;
     }
-    
-    .footer h1{
+    .content-9 #wrapper {
+        position: absolute;
+        width: 80%;
+        top: -165px;
+        left: -50px;
+        border: 1px solid #f7f9fc;
+    }
+    .peter {
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        right: -140px;
+        }
+        img[alt~=rightarrow] {
+            padding: 10px;
+        }
+        
+        img[alt~="leftarrow"] {
+            padding: 9px;
+            border-radius: 20px;
+        }
+        img[alt~="group"] {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        }
+        .content-9 .buttons {
+        position: absolute;
+        bottom: -15px;
+        left: 10px;
+        }
+        .footer h1{
         font-size: 2.3rem;
-        padding-inline: 230px;
+        padding-inline: 200px;
         padding-top: 50px;
-    }
-    
-    .email {
+        }
+        .email {
         padding-top: 20px;
         padding-bottom: 50px;
         padding-inline: 220px;
         position: relative;
-    }
-    .email button {
+        }
+        .email button {
         position: absolute;
         right: 220px;
         font-size: 1rem;
         padding-inline: 20px;
-    }
-    .email button:hover{
+        }
+        .email button:hover{
         cursor: pointer;
-    }
-    .email input {
+        }
+        .email input {
         font-size: 0.9rem;
         font-weight: 600;
         padding-left: 25px;
-    }
-    
-    .footer #menu{
+        }
+        .footer #menu{
        display: flex;
        flex-direction: row;
        padding-top: 10px;
        padding-bottom: 25px;
-    }
-    .footer #menu p{
+        }
+        .footer #menu p{
         text-align: left;
         font-size: 1rem;
-    }
-    .footer li {
+        }
+        .footer li {
         font-size: 1rem;
-    }
-    .footer .top{
+        }
+        .footer .top{
         display: flex;
         align-items: start;
-        width: 65%;
+        width: 27%;
         margin-left:50px ;
-    }
-    .footer .horizontal-list{
-        width: 100%;
-        margin: 0px;
+        }
+        .horizontal-list{
         display: flex;
-        justify-content: flex-start;
-    }
-    .footer #contact{
-        width: 50%;
+        width: 100%;
+        margin: 5% 5%;
+        }
+        .footer #contact{
+        width: 33%;
         margin-left: 0px;
         font-size: 1.5rem;
-    }
-    .footer #contact p {
+        }
+        .footer #contact p {
         font-size: 1.1rem;
-    }
-    .contact a {
+        }
+        .contact a {
         display: flex;
         justify-content: flex-start;
         font-size: 1.5rem;
         padding-block: 20px;
         padding-inline: 0px;
-    }
-    .footer .last {
+        }
+        .footer .last {
         font-size: 1.5rem;
         display: flex;
         justify-content: space-between;
         margin-inline: 40px;
-    }
-    .footer .Email{
+        }
+        .footer .Email{
         text-align: left;
-    }
+        }
+        .Email a {
+            display: flex;
+            justify-content: flex-start;
+        }
 }
 @media screen and (min-width:1150px) {
+    #menu .top {
+        width: 30%;
+    }
     #menu .top p{
         font-size: 1.3rem;
     }
+    .footer h1 {
+        font-size: 3rem;
+    }
+    .email {
+        padding-inline: 235px;
+    }
+    .email input {
+        font-size: 1rem;
+        padding-block: 20px;
+        border-radius: 50px;
+    }
+    .email button {
+        right: 240px;
+        font-size: 1.2rem;
+        padding-block: 10px;
+    }
     .footer .horizontal-list{
-        margin-left: 50px;
-        width: 80%;
-        font-size: 2rem;
+        width: 100%;
+        gap: 10px;
+        margin-inline: 20px;
     }
     .footer .last{
         justify-content: space-between;
@@ -690,7 +800,11 @@ li a {
     .footer li{
         font-size: 1.3rem;
     }
+    #contact {
+        width: 30%;
+        margin-left: 20px;
+    }
     #contact a {
     font-size: 2rem;
-}
+    }
 }
