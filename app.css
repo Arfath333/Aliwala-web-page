@@ -3,16 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 html {
     font-family: "AR One Sans", sans-serif;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -180,28 +173,24 @@ img[alt~="LOGOS"]{
     font-weight: 600;
 }
 .content-7 h1{
-    padding-inline: 10px;
+    padding-inline: 14px;
     font-size: 1.4rem;
 }
-.content-8 p {
-    font-size: 1.01rem;
-    color: #333333;
-    margin: 20px;
-}
-
 .content-7 {
     color: rgb(1, 55, 106);
     margin: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 .content-7 h1{
     padding-inline: 14px;
     font-size: 1.4rem;
 }
-.content-7 button{
-    margin: 20px;
+.content-7 button {
+    margin: 20px 70px;
     padding: 10px 30px;
     text-align: center;
     background-color: white;
@@ -210,7 +199,15 @@ img[alt~="LOGOS"]{
     border: 1px solid black;
     font-size: 0.9rem;
 }
-
+.content-7 a{
+    text-decoration: none;
+    color: #333333;
+}
+.content-8 p {
+    font-size: 1.01rem;
+    color: #333333;
+    margin: 20px;
+}
 .content-8 h3 {
     font-size: 0.9rem;
     font-weight: 600;
@@ -429,6 +426,10 @@ li a {
     }
     .content-2 button {
         display: none;
+        cursor: pointer;
+    }
+    .content-2 a {
+        text-decoration: none;
     }
     .content-6 h3{
         font-size: 0.85rem;
@@ -823,6 +824,19 @@ img[alt~="group1"]{
     }
 }
 @media screen and (min-width:1150px) {
+    .content-7 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 93%;
+    }
+    .content-7 h1 {
+        font-size: 3rem;
+    }
+    .content-7 button {
+        font-size: 1.7rem;
+        padding: 20px 55px;
+        border-radius: 50px;
+    }
 #menu .top {
     width: 30%;
 }

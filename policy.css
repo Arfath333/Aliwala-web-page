@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 html {
     font-family: "AR One Sans", sans-serif;
 }
@@ -45,18 +40,18 @@ nav .desktop {
     background-repeat: no-repeat;
     padding: 20px;
     margin-bottom: 40px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 300;
     }
     .main-wrapper h6{
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 500;
         color:#ff4d4d;
 
         margin: 20px 20px 10px 20px;
     }
     .main-wrapper article{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-weight: 400;
         margin-inline: 20px;
     }
@@ -375,6 +370,12 @@ nav .desktop {
             }
 }
 @media screen and (min-width:1150px) {
+    .main-wrapper h6 {
+        font-size: 2rem;
+    }
+    .main-wrapper article {
+        font-size: 1.3rem;
+    }
     .footer .horizontal-list{
         width: 80%;
         font-size: 2rem;
@@ -426,4 +427,13 @@ nav .desktop {
 #contact a {
 font-size: 2rem;
 }
+    }
+    @media screen and (min-width:2550px) {
+        .main-wrapper article {
+            font-size: 2.8rem;
+        }
+        .main-wrapper h6 {
+            font-size: 4rem;
+        }
+        
     }

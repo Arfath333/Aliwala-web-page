@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 html {
     /* font-family: "Noto Sans Gothic", sans-serif; */
     font-family: "AR One Sans", sans-serif;
@@ -622,6 +617,7 @@ li a {
         padding: 6.5px 18px;
         font-size: 0.9rem;
         font-weight: 600;
+        cursor: pointer;
     }
     .bottomwrapper {
         display: flex;

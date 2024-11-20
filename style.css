@@ -3,16 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 html {
     font-family: "AR One Sans", sans-serif;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -113,6 +106,7 @@ img[alt~="download-app"] {
     border-radius: 12px;
     background-color: transparent;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .content-2 #img2 {
@@ -150,6 +144,7 @@ img[alt~="download-app"] {
     font-size: 15px;
     font-weight: 900;
     column-gap: 15px;
+    cursor: pointer;
 }
 .content-3 a {
     color: rgb(71, 71, 71);
@@ -230,6 +225,7 @@ img[alt~="img7"] {
 
 .content-5 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .content6 {
@@ -269,6 +265,7 @@ img[alt~="img7"] {
     background-color: white;
     font-size: 0.9rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .content-7 {
@@ -295,6 +292,7 @@ img[alt~="img7"] {
     border-radius: 20px;
     border: 1px solid black;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 .content-7 a{
     text-decoration: none;
@@ -766,12 +764,12 @@ li a {
     }
 
     .content img {
-        width: 3.5%;
+        width: 3.3%;
         margin-inline: 20px;
     }
 
     .content .text {
-        padding-right: 40px;
+        padding-right: 30px;
         border-right: 1px solid #999999;
     }
 
@@ -792,7 +790,7 @@ li a {
         display: flex;
         flex-wrap: wrap;
         align-items: end;
-        width: 100%;
+        justify-content: center;
         padding:0;
         margin-top: 0;
     }
@@ -905,7 +903,7 @@ li a {
         font-size: 1rem;
         font-weight: 500;
         border-radius: 20px;
-        padding: 8px 30px;
+        padding: 3px 30px;
         margin: 50px 0 0 0;
     }
     .content-6 {
@@ -918,7 +916,7 @@ li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 85%;
+        width: 70%;
         margin-right:250px;
     }
     .content-6 h3 {
@@ -930,15 +928,15 @@ li a {
         line-height: 3rem;
         font-size: 1.9rem;
         font-weight: 400;
-        padding-inline: 100px;
-        padding-top: 40px;
+        padding-inline: 50px;
+
     }
     .content-6 button {
         border-radius: 30px;
         background-color: white;
-        padding: 17px 40px;
-        margin-top: 30px;
-        margin-bottom: 5rem;
+        padding: 12px 20px;
+        margin-top: 40px;
+        margin-bottom: 3rem;
         font-size: 1.4rem;
         font-weight: 300;
     }
@@ -952,7 +950,7 @@ li a {
 
 .content-7 h1 {
     text-align: left;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 600;
     width: 70%;
     padding-inline: 0px;
@@ -965,7 +963,7 @@ li a {
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
-    padding: 15px 55px;
+    padding: 13px 50px;
 }
 .content-7 a {
     text-decoration:none ;
@@ -1125,11 +1123,32 @@ img[alt~="group"] {
     }
 }
 @media screen and (min-width:1150px) {
+    .head h1 {
+        font-size: 4rem;
+        margin: 30px 570px 50px 50px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content-2 #img1 {
+        width: 35%;
+    }
     .content-2 #img2 {
         width: 30%;
     }
+    .content-2 #photos {
+        width: 30%
+    }
     .content-2 #img3, .content-2 #img4{
-        width: 120%;
+        width: 100%;
+    }
+    .content-2 button {
+        padding: 8px 20px;
     }
     .content-3 #img-6{
         /* width: 100vw;
@@ -1141,6 +1160,53 @@ img[alt~="group"] {
         font-weight: 900; */
         /* margin-inline: 10px; */
     }
+    
+    .content-5 .paragraph {
+        width: 50%;
+    }
+    .content-5 h1 {
+        font-size: 3.3rem;
+        line-height: 4rem;
+    }
+    .content-5 h3 {
+        font-size: 1.7rem;
+    }
+    .content-5 button {
+        font-size: 1.5rem;
+        padding:5px 30px;
+    }
+    .content-6 h3 {
+        font-size: 1.7rem;
+        margin-top: 40px;
+        padding-block: 60px;
+    }
+    .content-6 p {
+        font-size: 2.7rem;
+    }
+    .content-6 button {
+        padding: 20px 40px;
+        margin-top: 70px;
+        margin-bottom: 5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+    .content-7 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 93%;
+    }
+    .content-7 h1 {
+        font-size: 3rem;
+    }
+    .content-7 button {
+        font-size: 1.7rem;
+        padding: 20px 55px;
+        border-radius: 50px;
+    }
+    .content-9 .buttons {
+        left:20px;
+    }
     #menu .top {
         width: 30%;
     }
@@ -1149,9 +1215,10 @@ img[alt~="group"] {
     }
     .footer h1 {
         font-size: 3rem;
+        padding-inline: 300px;
     }
     .email {
-        padding-inline: 235px;
+        padding-inline: 350px;
     }
     .email input {
         font-size: 1rem;
@@ -1159,7 +1226,7 @@ img[alt~="group"] {
         border-radius: 50px;
     }
     .email button {
-        right: 240px;
+        right: 350px;
         font-size: 1.2rem;
         padding-block: 10px;
     }

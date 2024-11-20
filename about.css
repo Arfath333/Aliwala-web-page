@@ -5,7 +5,6 @@
 }
 
 body {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -85,8 +84,8 @@ img[alt~="hand-books"]{
     width: 46%;
     position: absolute;
     z-index: 1;
-    top: 37%;
-    left: 52%;
+    top: 13rem;
+    left: 10rem;
 }
 .content-1 h3{
     color:#ff4d4d;
@@ -119,7 +118,7 @@ img[alt~="hand-books"]{
     border-bottom:2px solid #333333;
 }
 .content img{
-    width: 10.5%;
+    width: 9%;
     height: 8%;
     margin: 15px;
 }
@@ -441,15 +440,36 @@ li a {
     padding-bottom: 25px;
 }
 @media screen and (min-width:375px) {
-    .footer h1 {
-        font-size: 1.4rem;
+    img[alt~="hand-books"]{
+        top: 13rem;
+        left: 10rem;
     }
-
+    .photos {
+        height: 21rem;
+    }
+    .content-1 p {
+    font-weight: 600;
+    }
+    .content-2 h3 {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    .content-2 p{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-inline: 36px;
+    }
+    .content-2 h1 {
+        font-size:1.5rem ;
+        font-weight: 600;
+    }
     .content-6 p {
         font-size: 1.5rem;
         padding-inline: 27px;
     }
-    
+    .footer h1 {
+        font-size: 1.4rem;
+    }
     .footer h1{
         font-size: 1.4rem;
     }
@@ -473,8 +493,8 @@ li a {
     }
         img[alt~="hand-books"]{
                 width: 45%;
-                top: 41%;
-                left: 55%;
+                top: 15rem;
+                left: 14rem;
         }
         img[alt~="laptop"]{
             width: 80%;
